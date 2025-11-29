@@ -1,0 +1,20 @@
+﻿<Window x:Class="gosuslugi.Voiti"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gosuslugi"
+        mc:Ignorable="d"
+        Title="Voiti" Height="1080" Width="1450" Background="#FFA6EAFA">
+    <Grid>
+        <Border BorderBrush="White" CornerRadius="12" BorderThickness="1" Background="white" Width="647" Height="769.1" Grid.ColumnSpan="2" Margin="402,80,401,85" HorizontalAlignment="Center" VerticalAlignment="Center" ></Border>
+        <TextBlock Text="ГОС" FontWeight="SemiBold" FontSize="48" Margin="606,152,0,834" HorizontalAlignment="Left" Foreground="#FF9B79E8" Width="109"/>
+        <TextBlock Text="УСЛУГИ" FontWeight="SemiBold" FontSize="48" Margin="697,152,0,834" HorizontalAlignment="Left" Foreground="#FFD95050" Width="209"/>
+        <TextBlock FontWeight="Bold" FontSize="30" Margin="526,372,823,644" Text="E-mail"/>
+        <TextBlock FontWeight="Bold" FontSize="30" Margin="524,521,370,502"><Run Language="ru-ru" Text="Пароль"/></TextBlock>
+        <Button Content="Зарегистрироваться" FontWeight="semibold" Foreground="Black" FontSize="24" Margin="586,944,0,0" Width="272" Height="38" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="Войти" FontWeight="semibold" Foreground="white" FontSize="24" Margin="0,764,0,0" Width="452" Height="58" Background="#FF0051FF" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox FontSize="24" Margin="498,431,496,590" TextChanged="TextBox_TextChanged" Background="#FFDEE0EE" Width="456" Height="43"/>
+        <TextBox FontSize="24" Margin="500,572,494,449" TextChanged="TextBox_TextChanged" Background="#FFDEE0EE" Width="456" Height="43"/>
+    </Grid>
+</Window>

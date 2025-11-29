@@ -5,14 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:gosuslugi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="1080" Width="1450">
+    <Grid Background="#FFA6EAFA" Width="1450" Height="1080">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="227*"/>
             <ColumnDefinition Width="573*"/>
         </Grid.ColumnDefinitions>
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="173,100,0,0" VerticalAlignment="Top"/>
-
-
+        <Border BorderBrush="White" CornerRadius="12" BorderThickness="1" Background="white" Width="647" Height="915" Grid.ColumnSpan="2" Margin="402,80,401,85" HorizontalAlignment="Center" VerticalAlignment="Center" ></Border>
+        <TextBlock Text="ГОС" FontWeight="SemiBold" FontSize="48" Grid.Column="1" Margin="185,141,0,846" HorizontalAlignment="Left" Foreground="#FF9B79E8"/>
+        <TextBlock Text="УСЛУГИ" FontWeight="SemiBold" FontSize="48" Grid.Column="1" Margin="277,141,0,847" HorizontalAlignment="Left" Foreground="#FFD95050"></TextBlock>
+        <TextBlock Text="Регистрация"  FontWeight="Bold" FontSize="30" Grid.Column="1" Margin="223,254,618,779" ></TextBlock>
+        <TextBlock Text="Фамилия" FontWeight="Bold" FontSize="30" Grid.Column="1" Margin="76,342,817,678"></TextBlock>
+        <Border Margin="50,390,533,634" CornerRadius="7" Width="456" Height="43" Grid.Column="1" Visibility="Visible" Background="#FFDEE0EE" Opacity="0.8" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Введите Фамилию" FontWeight="SemiBold"  FontSize="24" Padding="5" Margin="19,0,-19,0" Opacity="0.7"/>
+        </Border>
+        <TextBlock Text="Имя" FontWeight="Bold" FontSize="30" Grid.Column="1" Margin="79,481,815,522"></TextBlock>
+        <TextBlock Text="Телефон" FontWeight="Bold" FontSize="30" Grid.Column="1" Margin="79,606,815,421"></TextBlock>
+        <TextBlock Text="E-mail" FontWeight="Bold" FontSize="30" Grid.Column="1" Margin="79,729,815,294"></TextBlock>
+        <TextBlock Text="Уже зарегистрированы?" FontSize="25" FontWeight="Bold" Grid.Column="1" Margin="105,1012,629,12"></TextBlock>
+        <Button Grid.Column="1" Content="Войти" FontWeight="semibold" Foreground="Black" FontSize="24" Margin="407,1011,0,0" Width="111" Height="38" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
+        <Button Grid.Column="1" Content="Закончить регистрацию" FontWeight="semibold" Foreground="white" FontSize="24" Margin="68,896,518,126" Width="453" Height="58" Background="#FF0051FF" HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+        <TextBox FontSize="24" Grid.Column="1" Margin="49,395,531,640" TextChanged="TextBox_TextChanged" Background="#FFDEE0EE"/>
+        <TextBox FontSize="24" Grid.Column="1" Margin="43,779,537,256" TextChanged="TextBox_TextChanged" Background="#FFDEE0EE"/>
+        <TextBox FontSize="24" Grid.Column="1" Margin="49,657,531,377" TextChanged="TextBox_TextChanged" Background="#FFDEE0EE"/>
+        <TextBox FontSize="24" Grid.Column="1" Margin="51,528,529,507" TextChanged="TextBox_TextChanged" Background="#FFDEE0EE"/>
     </Grid>
 </Window>
